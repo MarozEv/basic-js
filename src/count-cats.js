@@ -1,4 +1,3 @@
-const { interfaces } = require('mocha');
 const { NotImplementedError } = require('../extensions/index.js');
 
 /**
