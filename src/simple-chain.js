@@ -24,12 +24,16 @@ const chainMaker = {
 
   },
   reverseChain() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    this.chain.reverse();
+    return this;
   },
   finishChain() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    let string = "";
+    for (let i = 0; i < this.chain.length; i++) {
+      string += `~( ${this.chain[i]} )~`;
+    }
+    this.chain = [];
+    return string.slice(1, (string.length - 1));
   }
 };
 
